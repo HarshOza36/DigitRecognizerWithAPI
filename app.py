@@ -39,7 +39,7 @@ def upload_image():
     pred = "No File Chosen Yet"
     chosen = ""
     model = tf.keras.models.load_model(
-        'kfulldrmodeldigit')
+        'models/kfulldrmodeldigit')
     if request.method == "POST":
         if request.files:
             image = request.files["image"]
@@ -88,7 +88,7 @@ def test():
     print(originalImage)
     # do some fancy processing here....
     model = tf.keras.models.load_model(
-        'kfulldrmodeldigit')
+        'models/kfulldrmodeldigit')
     grayImage = cv2.cvtColor(originalImage, cv2.COLOR_BGR2GRAY)
     (thresh, blackAndWhiteImage) = cv2.threshold(
         grayImage, 127, 255, cv2.THRESH_BINARY)
