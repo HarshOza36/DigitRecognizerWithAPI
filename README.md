@@ -2,6 +2,7 @@
 This project is Flask App for digit recognizer using MNIST set and with a API to use.
 
 ## It is not real time detection, it will statically recognize the digits
+## For Real time recognition go to [This Github repository](https://github.com/HarshOza36/RealTime_DigitRecognizer)
 
 This project will allow user to upload images those will be used to feed it to the model and also be saved in the library of the admin.
 Some test images are in ```static\img\uploads``` folder.
